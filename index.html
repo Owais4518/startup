@@ -1,0 +1,932 @@
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="/assests/images/logo.jpg">
+  <title>Choose and buy - Online Store</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="/assests/images/logo.jpg" type="image/x-icon">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+    }
+    .navbar-brand {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #dc3545;
+    }
+    .category-section h2 {
+      border-bottom: 2px solid #dc3545;
+      padding-bottom: 10px;
+      margin-top: 40px;
+    }
+    .product-card {
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border: none;
+      transition: transform 0.2s;
+    }
+    .product-card:hover {
+      transform: scale(1.02);
+    }
+    footer {
+      background-color: #343a40;
+      color: white;
+      padding: 30px 0;
+      margin-top: 40px;
+    }
+    .col-md-6{
+      margin-left: 3%;
+    }
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 50px;
+      font-size: 18px;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      z-index: 1000;
+    }
+    .search-bar {
+      max-width: 500px;
+      margin: 20px auto;
+    }
+    .cart-quantity {
+      margin-left: 10px;
+    }
+    .remove-btn {
+      float: right;
+      font-size: 0.9rem;
+      color: red;
+      cursor: pointer;
+    }
+    .contact-form input, .contact-form textarea {
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Choose and buy</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kids">For Kids</a></li>
+          <li class="nav-item"><a class="nav-link" href="#men">For Men</a></li>
+          <li class="nav-item"><a class="nav-link" href="#women">For Women</a></li>
+          <li class="nav-item"><a class="nav-link" href="#electronics">Electronics</a></li>
+          <li class="nav-item"><a class="nav-link" href="#ladiesclothing"> ladies Clothing</a></li>
+          <li class="nav-item"><a class="nav-link" href="#ladiesmakeup">ladies Makeup</a></li>
+          <li class="nav-item"><a class="nav-link" href="#mobileacessories">mobile-accessories</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Homeacessories">Home-accessories</a></li>
+          <li class="nav-item"><a class="nav-link" href="#family">For Elders</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Search bar -->
+  <div class="search-bar text-center">
+    <input type="text" class="form-control" id="searchInput" placeholder="Search for products...">
+  </div>
+
+  <div class="container mt-4">
+    <div class="text-center">
+      <h1>Welcome to choose and buy</h1>
+      <p>The best online store and your favourite store</p>
+      <p>Home delivery available | Order via WhatsApp or phone</p>
+    </div>
+<!-- For Kids Section -->
+<div id="kids" class="category-section">
+    <h2>For Kids</h2>
+    <div class="row">
+      <!-- Product 1 -->
+      <div class="col-md-3 product">
+        <div class="card product-card">
+          <img src="/images/download (1).jpeg" class="card-img-top" alt="Toys">
+          <div class="card-body">
+            <h5 class="card-title">Toy Car</h5>
+            <p class="card-text">Rs. 350</p>
+            <button class="btn btn-danger add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Product 2 -->
+      <div class="col-md-3 product">
+        <div class="card product-card">
+          <img src="/images/(2).jpeg" class="card-img-top" alt="Plush Toy">
+          <div class="card-body">
+            <h5 class="card-title">Plush Toy</h5>
+            <p class="card-text">Rs. 500</p>
+            <button class="btn btn-danger add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Product 3 -->
+      <div class="col-md-3 product">
+        <div class="card product-card">
+          <img src="/images/download(3).jpeg" class="card-img-top" alt="Board Game">
+          <div class="card-body">
+            <h5 class="card-title">Board Game</h5>
+            <p class="card-text">Rs. 750</p>
+            <button class="btn btn-danger add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Product 4 -->
+      <div class="col-md-3 product">
+        <div class="card product-card">
+          <img src="/images/(4).jpeg" class="card-img-top" alt="Puzzle Set">
+          <div class="card-body">
+            <h5 class="card-title">Puzzle Set</h5>
+            <p class="card-text">Rs. 200</p>
+            <button class="btn btn-danger add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Product 5 -->
+      <div class="col-md-3 product">
+        <div class="card product-card">
+          <img src="/images/download5.jpeg" class="card-img-top" alt="Toy Train">
+          <div class="card-body">
+            <h5 class="card-title">Toy Train</h5>
+            <p class="card-text">Rs. 600</p>
+            <button class="btn btn-danger add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Product 6 -->
+      <div class="col-md-3 product">
+        <div class="card product-card">
+          <img src="/images/download(6).jpeg" class="card-img-top" alt="Building Blocks">
+          <div class="card-body">
+            <h5 class="card-title">Building Blocks</h5>
+            <p class="card-text">Rs. 400</p>
+            <button class="btn btn-danger add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Product 7 -->
+      <div class="col-md-3 product">
+        <div class="card product-card">
+          <img src="/images/download(7).jpeg" class="card-img-top" alt="Action Figure">
+          <div class="card-body">
+            <h5 class="card-title">Action Figure</h5>
+            <p class="card-text">Rs. 500</p>
+            <button class="btn btn-danger add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Product 8 -->
+      <div class="col-md-3 product">
+        <div class="card product-card">
+          <img src="images/download(8).jpeg" class="card-img-top" alt="Doll Set">
+          <div class="card-body">
+            <h5 class="card-title">Doll Set</h5>
+            <p class="card-text">Rs. 650</p>
+            <button class="btn btn-danger add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Product 9 -->
+      <div class="col-md-3 product">
+        <div class="card product-card">
+          <img src="/images/9.jpeg" class="card-img-top" alt="Bicycle">
+          <div class="card-body">
+            <h5 class="card-title">Kids Bicycle</h5>
+            <p class="card-text">Rs. 2,500</p>
+            <button class="btn btn-danger add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Product 12 -->
+      <div class="col-md-3 product">
+        <div class="card product-card">
+          <img src="/images/10.jpeg" class="card-img-top" alt="Toy Robot">
+          <div class="card-body">
+            <h5 class="card-title">Toy Robot</h5>
+            <p class="card-text">Rs. 800</p>
+            <button class="btn btn-danger add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Product 13 -->
+      <div class="col-md-3 product">
+        <div class="card product-card">
+          <img src="/images/11.jpeg" class="card-img-top" alt="Kids Shoes">
+          <div class="card-body">
+            <h5 class="card-title">Kids Shoes</h5>
+            <p class="card-text">Rs. 900</p>
+            <button class="btn btn-danger add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Product 14 -->
+      <div class="col-md-3 product">
+        <div class="card product-card">
+          <img src="/images/12.png "class="card-img-top" alt="Kids T-shirt">
+          <div class="card-body">
+            <h5 class="card-title">Kids T-shirt</h5>
+            <p class="card-text">Rs. 350</p>
+            <button class="btn btn-danger add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Product 15 -->
+      <div class="col-md-3 product">
+        <div class="card product-card">
+          <img src="/images/13.jpeg" class="card-img-top" alt="Playdough Set">
+          <div class="card-body">
+            <h5 class="card-title">Playdough Set</h5>
+            <p class="card-text">Rs. 250</p>
+            <button class="btn btn-danger add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Product 16 -->
+      <div class="col-md-3 product">
+        <div class="card product-card">
+          <img src="/images/14.jpeg" class="card-img-top" alt="Kids Sunglasses">
+          <div class="card-body">
+            <h5 class="card-title">Kids Sunglasses</h5>
+            <p class="card-text">Rs. 500</p>
+            <button class="btn btn-danger add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Product 17 -->
+      <div class="col-md-3 product">
+        <div class="card product-card">
+          <img src="images/15.jpeg" class="card-img-top" alt="Kids Watch">
+          <div class="card-body">
+            <h5 class="card-title">Kids Watch</h5>
+            <p class="card-text">Rs. 400</p>
+            <button class="btn btn-danger add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Product 18 -->
+      <div class="col-md-3 product">
+        <div class="card product-card">
+          <img src="/images/16.jpeg" class="card-img-top" alt="Kids Helmet">
+          <div class="card-body">
+            <h5 class="card-title">Kids Helmet</h5>
+            <p class="card-text">Rs. 750</p>
+            <button class="btn btn-danger add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Product 19 -->
+      <div class="col-md-3 product">
+        <div class="card product-card">
+          <img src="/images/17.jpeg" class="card-img-top" alt="Kids Pillow">
+          <div class="card-body">
+            <h5 class="card-title">Kids Pillow</h5>
+            <p class="card-text">Rs. 400</p>
+            <button class="btn btn-danger add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Product 20 -->
+      <div class="col-md-3 product">
+        <div class="card product-card">
+          <img src="/images/18.jpeg" class="card-img-top" alt="Kids Cap">
+          <div class="card-body">
+            <h5 class="card-title">Kids Cap</h5>
+            <p class="card-text">Rs. 250</p>
+            <button class="btn btn-danger add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Product 21 -->
+      <div class="col-md-3 product">
+        <div class="card product-card">
+          <img src="/images/download.jpeg" class="card-img-top" alt="Kids Gloves">
+          <div class="card-body">
+            <h5 class="card-title">Kids Gloves</h5>
+            <p class="card-text">Rs. 250</p>
+            <button class="btn btn-danger add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+  
+      
+  
+      <!-- Product 23 -->
+      <div class="col-md-3 product">
+        <div class="card product-card">
+          <img src="/images/download (2).jpeg" class="card-img-top" alt="Kids Jacket">
+          <div class="card-body">
+            <h5 class="card-title">Kids Skirt</h5>
+            <p class="card-text">Rs. 1,200</p>
+            <button class="btn btn-danger add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Product 24 -->
+      <div class="col-md-3 product">
+        <div class="card product-card">
+          <img src="/images/download (3).jpeg" class="card-img-top" alt="Kids Jacket">
+          <div class="card-body">
+            <h5 class="card-title">Kids Jacket</h5>
+            <p class="card-text">Rs. 3,200</p>
+            <button class="btn btn-danger add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- For Men Section -->
+<div id="men" class="category-section">
+    <h2>For Men</h2>
+    <div class="row">
+      <!-- Product 1 -->
+      <div class="col-md-3 product">
+        <div class="card product-card">
+          <img src="/images/download (4).jpeg" class="card-img-top" alt="Leather Jacket">
+          <div class="card-body">
+            <h5 class="card-title">Leather Jacket</h5>
+            <p class="card-text">Rs. 2,500</p>
+            <button class="btn btn-danger add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Product 2 -->
+      <div class="col-md-3 product">
+        <div class="card product-card">
+          <img src="/images/download (5).jpeg" class="card-img-top" alt="Men's Shirt">
+          <div class="card-body">
+            <h5 class="card-title">Men's Shirt</h5>
+            <p class="card-text">Rs. 1,200</p>
+            <button class="btn btn-danger add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Product 3 -->
+      <div class="col-md-3 product">
+        <div class="card product-card">
+          <img src="/images/download (6).jpeg" class="card-img-top" alt="Men's Sneakers">
+          <div class="card-body">
+            <h5 class="card-title">Men's Sneakers</h5>
+            <p class="card-text">Rs. 1,500</p>
+            <button class="btn btn-danger add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Product 4 -->
+      <div class="col-md-3 product">
+        <div class="card product-card">
+          <img src="/images/download (7).jpeg" class="card-img-top" alt="Watch for Men">
+          <div class="card-body">
+            <h5 class="card-title">Watch for Men</h5>
+            <p class="card-text">Rs. 3,000</p>
+            <button class="btn btn-danger add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Product 5 -->
+      <div class="col-md-3 product">
+        <div class="card product-card">
+          <img src="/images/download (8).jpeg" class="card-img-top" alt="Men's Wallet">
+          <div class="card-body">
+            <h5 class="card-title">Men's Wallet</h5>
+            <p class="card-text">Rs. 1,300</p>
+            <button class="btn btn-danger add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Product 6 -->
+      <div class="col-md-3 product">
+        <div class="card product-card">
+          <img src="/images/download (9).jpeg" class="card-img-top" alt="Men's T-shirt">
+          <div class="card-body">
+            <h5 class="card-title">Men's T-shirt</h5>
+            <p class="card-text">Rs. 1,700</p>
+            <button class="btn btn-danger add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Product 7 -->
+      <div class="col-md-3 product">
+        <div class="card product-card">
+          <img src="/images/download (10).jpeg" class="card-img-top" alt="Men's Sunglasses">
+          <div class="card-body">
+            <h5 class="card-title">Men's Sunglasses</h5>
+            <p class="card-text">Rs. 750</p>
+            <button class="btn btn-danger add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Product 8 -->
+      <div class="col-md-3 product">
+        <div class="card product-card">
+          <img src="/images/download (11).jpeg" class="card-img-top" alt="Men's Jeans">
+          <div class="card-body">
+            <h5 class="card-title">Men's Jeans</h5>
+            <p class="card-text">Rs. 2,100</p>
+            <button class="btn btn-danger add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Product 9 -->
+      <div class="col-md-3 product">
+        <div class="card product-card">
+          <img src="/images/download (12).jpeg" class="card-img-top" alt="Men's Belt">
+          <div class="card-body">
+            <h5 class="card-title">Men's Belt</h5>
+            <p class="card-text">Rs. 550</p>
+            <button class="btn btn-danger add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Product 10 -->
+      <div class="col-md-3 product">
+        <div class="card product-card">
+          <img src="/images/download (13).jpeg" class="card-img-top" alt="Men's Hoodie">
+          <div class="card-body">
+            <h5 class="card-title">Men's Hoodie</h5>
+            <p class="card-text">Rs. 2,500</p>
+            <button class="btn btn-danger add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Product 11 -->
+      <div class="col-md-3 product">
+        <div class="card product-card">
+          <img src="/images/download (14).jpeg" class="card-img-top" alt="Men's Casual Shoes">
+          <div class="card-body">
+            <h5 class="card-title">Men's Casual Shoes</h5>
+            <p class="card-text">Rs. 1,950</p>
+            <button class="btn btn-danger add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Product 12 -->
+      <div class="col-md-3 product">
+        <div class="card product-card">
+          <img src="/images/download (15).jpeg" class="card-img-top" alt="Men's Jacket">
+          <div class="card-body">
+            <h5 class="card-title">Men's Jacket</h5>
+            <p class="card-text">Rs. 2,200</p>
+            <button class="btn btn-danger add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+  
+      <!-- Product 15 -->
+      <div class="col-md-3 product">
+        <div class="card product-card">
+          <img src="/images/download (16).jpeg" class="card-img-top" alt="Men's Backpack">
+          <div class="card-body">
+            <h5 class="card-title">Men's Backpack</h5>
+            <p class="card-text">Rs. 2,200</p>
+            <button class="btn btn-danger add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Product 16 -->
+      <div class="col-md-3 product">
+        <div class="card product-card">
+          <img src="/images/download (17).jpeg" class="card-img-top" alt="Men's Shoes">
+          <div class="card-body">
+            <h5 class="card-title">Men's Shoes</h5>
+            <p class="card-text">Rs. 2,000</p>
+            <button class="btn btn-danger add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Product 17 -->
+      <div class="col-md-3 product">
+        <div class="card product-card">
+          <img src="/images/download (19).jpeg" class="card-img-top" alt="Men's Perfume">
+          <div class="card-body">
+            <h5 class="card-title">Men's Perfume</h5>
+            <p class="card-text">Rs. 1,900</p>
+            <button class="btn btn-danger add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+  
+      
+      <!-- Product 19 -->
+      <div class="col-md-3 product">
+        <div class="card product-card">
+          <img src="/images/download (18).jpeg" class="card-img-top" alt="Men's Polo Shirt">
+          <div class="card-body">
+            <h5 class="card-title">Men's Polo Shirt</h5>
+            <p class="card-text">Rs. 1,200</p>
+            <button class="btn btn-danger add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- For Women Section -->
+<div id="women" class="category-section">
+  <h2>For Women</h2>
+  <div class="row">
+
+    <!-- Product Cards Start -->
+    <div class="col-md-3 product">
+      <div class="card product-card">
+        <img src="/images/download (20).jpeg" class="card-img-top" alt="Fancy Bag">
+        <div class="card-body">
+          <h5 class="card-title">Fancy Bag</h5>
+          <p class="card-text">Rs. 1800</p>
+          <button class="btn btn-danger add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3 product">
+      <div class="card product-card">
+        <img src="/images/download (21).jpeg" class="card-img-top" alt="Stylish Bag">
+        <div class="card-body">
+          <h5 class="card-title">Stylish Bag</h5>
+          <p class="card-text">Rs. 2,200</p>
+          <button class="btn btn-danger add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ladies Clothes -->
+    <div class="col-md-3 product">
+      <div class="card product-card">
+        <img src="/images/download (22).jpeg" class="card-img-top" alt="2 Piece Suit">
+        <div class="card-body">
+          <h5 class="card-title">2 Piece Suit</h5>
+          <p class="card-text">Rs. 3,500</p>
+          <button class="btn btn-danger add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3 product">
+      <div class="card product-card">
+        <img src="/images/download (23).jpeg" class="card-img-top" alt="3 Piece Suit">
+        <div class="card-body">
+          <h5 class="card-title">3 Piece Suit</h5>
+          <p class="card-text">Rs. 3,750</p>
+          <button class="btn btn-danger add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Repeat for more 24+ products -->
+
+    <!-- Makeup Products -->
+    <div class="col-md-3 product">
+      <div class="card product-card">
+        <img src="/images/download (24).jpeg" class="card-img-top" alt="Lipstick Set">
+        <div class="card-body">
+          <h5 class="card-title">Lipstick Set</h5>
+          <p class="card-text">Rs. 1,250</p>
+          <button class="btn btn-danger add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3 product">
+      <div class="card product-card">
+        <img src="/images/download (25).jpeg" class="card-img-top" alt="Foundation Kit">
+        <div class="card-body">
+          <h5 class="card-title">Foundation Kit</h5>
+          <p class="card-text">Rs. 1,850</p>
+          <button class="btn btn-danger add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add more makeup products like eyeliner, mascara, blush, brushes etc. -->
+
+    <!-- Continue adding until 28+ products -->
+
+  </div>
+</div>
+<!-- End of For Women Section -->
+
+<!-- Electronics Section -->
+<div id="electronics" class="category-section">
+  <h2>Electronics</h2>
+  <div class="row">
+
+    <div class="col-md-3 product"><div class="card product-card"><img src="/images/download (26).jpeg" class="card-img-top" alt="moto g30"><div class="card-body"><h5 class="card-title">Smartphone</h5><p><em>moto g30</em></p><p class="card-text">Rs. 42,000</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="/images/download (27).jpeg" class="card-img-top" alt="Samsung smart LED TV 42 inch"><div class="card-body"><h5 class="card-title">LED TV</h5><p><em>Samsung smart LED tv 42 inch</em></p><p class="card-text">Rs. 65,000</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="/images/download (28).jpeg" class="card-img-top" alt=" hp Laptop windows 11"><div class="card-body"><h5 class="card-title">Laptop</h5><p><em>hp laptop windows 11 color silver</em></p><p class="card-text">Rs. 75,000</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="images/download (29).jpeg" class="card-img-top" alt=" Apple Smart Watch"><div class="card-body"><h5 class="card-title">Smart Watch</h5><p><em>with free 2 bands color blue,orange</em></p><p class="card-text">Rs. 60,500</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="/images/images.jpeg" class="card-img-top" alt="Bluetooth Speaker"><div class="card-body"><h5 class="card-title">Bluetooth Speaker</h5><p class="card-text">Rs. 4,800</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="/images/download (30).jpeg" class="card-img-top" alt=" solar Power Bank with 4 cables"><div class="card-body"><h5 class="card-title">Power Bank</h5><p><em>solar power bank witk 4 cables</em></p><p class="card-text">Rs. 4,400</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="/images/download (31).jpeg" class="card-img-top" alt="Wireless Earbuds"><div class="card-body"><h5 class="card-title">Wireless Earbuds</h5><p class="card-text">Rs. 5,000</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="/images/download (33).jpeg" class="card-img-top" alt="Headphones"><div class="card-body"><h5 class="card-title">Headphones</h5><p class="card-text">Rs. 4,000</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="/images/download (34).jpeg" class="card-img-top" alt="Printer"><div class="card-body"><h5 class="card-title">Printer</h5><p class="card-text">Rs. 18,000</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="/images/images (1).jpeg" class="card-img-top" alt="Scanner"><div class="card-body"><h5 class="card-title">Scanner</h5><p class="card-text">Rs. 15,500</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+
+    <!-- Additional 20+ products -->
+    <div class="col-md-3 product"><div class="card product-card"><img src="/images/download (35).jpeg" class="card-img-top" alt=" HaierWashing Machine"><div class="card-body"><h5 class="card-title">Washing Machine</h5><p class="card-text">Rs. 40,000</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="/images/download (36).jpeg" class="card-img-top" alt="Air Conditioner"><div class="card-body"><h5 class="card-title">Air Conditioner</h5><p class="card-text">Rs. 85,000</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="/images/download (37).jpeg" class="card-img-top" alt=" Anex Microwave Oven"><div class="card-body"><h5 class="card-title">Microwave Oven</h5><p class="card-text">Rs. 14,000</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="/images/download (38).jpeg" class="card-img-top" alt=" Haier mini Refrigerator"><div class="card-body"><h5 class="card-title">Refrigerator</h5><p class="card-text">Rs. 60,000</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="/images/download (39).jpeg" class="card-img-top" alt="Toaster"><div class="card-body"><h5 class="card-title">Toaster</h5><p class="card-text">Rs. 3,500</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="/images/download (40).jpeg " class="card-img-top" alt="Electric Kettle"><div class="card-body"><h5 class="card-title">Electric Kettle</h5><p class="card-text">Rs. 2,700</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="/images/images (2).jpeg" class="card-img-top" alt="Electric Iron"><div class="card-body"><h5 class="card-title">Electric Iron</h5><p class="card-text">Rs. 3,200</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="/images/download (42).jpeg" class="c"card-body"><h5 class="card-title">Gas Heater</h5><p class="card-text">Rs. 6,000</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="/images/download (43).jpeg" class="card-img-top" alt="Room Cooler"><div class="card-body"><h5 class="card-title">Room Cooler</h5><p class="card-text">Rs. 18,500</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="/images/images (3).jpeg" class="card-img-top" alt="Geyser"><div class="card-body"><h5 class="card-title">Geyser</h5><p class="card-text">Rs. 9,500</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+
+    <!-- Total: 30+ products completed -->
+
+  </div>
+</div>
+<!-- End of Electronics Section -->
+
+<!-- Ladies Clothing Section -->
+<div id="ladies-clothing" class="category-section">
+  <h2>Ladies Clothing</h2>
+  <div class="row">
+    <div class="col-md-3 product"><div class="card product-card"><img src="/images/download (44).jpeg" class="card-img-top" alt="Cotton Suit"><div class="card-body"><h5 class="card-title">Cotton Suit</h5><p class="card-text">Rs. 2,500</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="/images/download (45).jpeg" class="card-img-top" alt="Resham Suit"><div class="card-body"><h5 class="card-title">Resham Suit</h5><p class="card-text">Rs. 4,000</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="/images/download (46).jpeg" class="card-img-top" alt="Tissue Dress"><div class="card-body"><h5 class="card-title">Tissue Dress</h5><p class="card-text">Rs. 3,800</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="/images/download (47).jpeg" class="card-img-top" alt="Chiffon Dress"><div class="card-body"><h5 class="card-title">Chiffon Dress</h5><p class="card-text">Rs. 2,700</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="/images/download (48).jpeg" class="card-img-top" alt="Lawn Suit"><div class="card-body"><h5 class="card-title">Lawn Suit</h5><p class="card-text">Rs. 1,900</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="/images/download (49).jpeg" class="card-img-top" alt="3 Piece Embroidered"><div class="card-body"><h5 class="card-title">3 Piece Embroidered</h5><p class="card-text">Rs. 3,500</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="/images/download (50).jpeg" class="card-img-top" alt="Silk Suit"><div class="card-body"><h5 class="card-title">Silk Suit</h5><p class="card-text">Rs. 4,500</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="/images/blue-printed-kurti.jpg" class="card-img-top" alt="Casual Kurti"><div class="card-body"><h5 class="card-title">Casual Kurti</h5><p class="card-text">Rs. 1,200</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="/images/download (51).jpeg" class="card-img-top" alt="Formal Dress"><div class="card-body"><h5 class="card-title">Formal Dress</h5><p class="card-text">Rs. 5,200</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="/images/download (52).jpeg" class="card-img-top" alt="Fancy Frock"><div class="card-body"><h5 class="card-title">Fancy Frock</h5><p class="card-text">Rs. 2,800</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="/images/download (53).jpeg" class="card-img-top" alt="Denim Kurti"><div class="card-body"><h5 class="card-title">Denim Kurti</h5><p class="card-text">Rs. 2,000</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="/images/download (54).jpeg" class="card-img-top" alt="Winter Shawl"><div class="card-body"><h5 class="card-title">Winter Shawl</h5><p class="card-text">Rs. 1,800</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="/images/download (55).jpeg" class="card-img-top" alt="Net Suit"><div class="card-body"><h5 class="card-title">Net Suit</h5><p class="card-text">Rs. 3,000</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="/images/download (56).jpeg" class="card-img-top" alt="Georgette Dress"><div class="card-body"><h5 class="card-title">Georgette Dress</h5><p class="card-text">Rs. 2,900</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Maxi Gown"><div class="card-body"><h5 class="card-title">Maxi Gown</h5><p class="card-text">Rs. 4,800</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+  </div>
+</div>
+<!-- End of Ladies Clothing Section -->
+
+
+<!-- Ladies Makeup Section -->
+
+<div id="ladies-makeup" class="category-section">
+  <h2>Ladies Makeup</h2>
+  <div class="row">
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Foundation"><div class="card-body"><h5 class="card-title">Foundation</h5><p class="card-text">Rs. 1,800</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Lipstick"><div class="card-body"><h5 class="card-title">Lipstick</h5><p class="card-text">Rs. 850</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Mascara"><div class="card-body"><h5 class="card-title">Mascara</h5><p class="card-text">Rs. 750</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Eyeliner"><div class="card-body"><h5 class="card-title">Eyeliner</h5><p class="card-text">Rs. 600</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Blush"><div class="card-body"><h5 class="card-title">Blush</h5><p class="card-text">Rs. 950</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Compact Powder"><div class="card-body"><h5 class="card-title">Compact Powder</h5><p class="card-text">Rs. 650</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Primer"><div class="card-body"><h5 class="card-title">Primer</h5><p class="card-text">Rs. 1,200</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Highlighter"><div class="card-body"><h5 class="card-title">Highlighter</h5><p class="card-text">Rs. 1,000</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Contour Kit"><div class="card-body"><h5 class="card-title">Contour Kit</h5><p class="card-text">Rs. 1,700</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="BB Cream"><div class="card-body"><h5 class="card-title">BB Cream</h5><p class="card-text">Rs. 950</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    
+    <!-- 15 more makeup items -->
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Concealer"><div class="card-body"><h5 class="card-title">Concealer</h5><p class="card-text">Rs. 950</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Setting Spray"><div class="card-body"><h5 class="card-title">Setting Spray</h5><p class="card-text">Rs. 1,300</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Lip Gloss"><div class="card-body"><h5 class="card-title">Lip Gloss</h5><p class="card-text">Rs. 700</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Lip Liner"><div class="card-body"><h5 class="card-title">Lip Liner</h5><p class="card-text">Rs. 350</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Eye Shadow Palette"><div class="card-body"><h5 class="card-title">Eye Shadow Palette</h5><p class="card-text">Rs. 2,200</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Makeup Brushes"><div class="card-body"><h5 class="card-title">Makeup Brushes</h5><p class="card-text">Rs. 1,800</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Nail Polish"><div class="card-body"><h5 class="card-title">Nail Polish</h5><p class="card-text">Rs. 450</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Makeup Remover"><div class="card-body"><h5 class="card-title">Makeup Remover</h5><p class="card-text">Rs. 650</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Face Serum"><div class="card-body"><h5 class="card-title">Face Serum</h5><p class="card-text">Rs. 2,000</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Facial Cleanser"><div class="card-body"><h5 class="card-title">Facial Cleanser</h5><p class="card-text">Rs. 900</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+  </div>
+</div>
+
+
+<!-- Ladies Makeup Section -->
+<div id="ladies-makeup" class="category-section">
+  <h2>Ladies Makeup</h2>
+  <div class="row">
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Foundation"><div class="card-body"><h5 class="card-title">Foundation</h5><p class="card-text">Rs. 1,800</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Lipstick"><div class="card-body"><h5 class="card-title">Lipstick</h5><p class="card-text">Rs. 850</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Mascara"><div class="card-body"><h5 class="card-title">Mascara</h5><p class="card-text">Rs. 750</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Eyeliner"><div class="card-body"><h5 class="card-title">Eyeliner</h5><p class="card-text">Rs. 600</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Blush"><div class="card-body"><h5 class="card-title">Blush</h5><p class="card-text">Rs. 950</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Compact Powder"><div class="card-body"><h5 class="card-title">Compact Powder</h5><p class="card-text">Rs. 650</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Primer"><div class="card-body"><h5 class="card-title">Primer</h5><p class="card-text">Rs. 1,200</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Highlighter"><div class="card-body"><h5 class="card-title">Highlighter</h5><p class="card-text">Rs. 1,000</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Contour Kit"><div class="card-body"><h5 class="card-title">Contour Kit</h5><p class="card-text">Rs. 1,700</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="BB Cream"><div class="card-body"><h5 class="card-title">BB Cream</h5><p class="card-text">Rs. 950</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Concealer"><div class="card-body"><h5 class="card-title">Concealer</h5><p class="card-text">Rs. 950</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Setting Spray"><div class="card-body"><h5 class="card-title">Setting Spray</h5><p class="card-text">Rs. 1,300</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Lip Gloss"><div class="card-body"><h5 class="card-title">Lip Gloss</h5><p class="card-text">Rs. 700</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Lip Liner"><div class="card-body"><h5 class="card-title">Lip Liner</h5><p class="card-text">Rs. 350</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Eye Shadow Palette"><div class="card-body"><h5 class="card-title">Eye Shadow Palette</h5><p class="card-text">Rs. 2,200</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Makeup Brushes"><div class="card-body"><h5 class="card-title">Makeup Brushes</h5><p class="card-text">Rs. 1,800</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Nail Polish"><div class="card-body"><h5 class="card-title">Nail Polish</h5><p class="card-text">Rs. 450</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Makeup Remover"><div class="card-body"><h5 class="card-title">Makeup Remover</h5><p class="card-text">Rs. 650</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Face Serum"><div class="card-body"><h5 class="card-title">Face Serum</h5><p class="card-text">Rs. 2,000</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Facial Cleanser"><div class="card-body"><h5 class="card-title">Facial Cleanser</h5><p class="card-text">Rs. 900</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+  </div>
+</div>
+<!-- End of Ladies Makeup Section -->
+<!-- Mobile Accessories Section -->
+<div id="mobile-accessories" class="category-section">
+  <h2>Mobile Accessories</h2>
+  <div class="row">
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Mobile Cover"><div class="card-body"><h5 class="card-title">Mobile Cover</h5><p class="card-text">Rs. 300</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Tempered Glass"><div class="card-body"><h5 class="card-title">Tempered Glass</h5><p class="card-text">Rs. 250</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Earphones"><div class="card-body"><h5 class="card-title">Earphones</h5><p class="card-text">Rs. 600</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <!-- ... 22 more items follow ... -->
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Phone Tripod"><div class="card-body"><h5 class="card-title">Phone Tripod</h5><p class="card-text">Rs. 1,100</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+  </div>
+</div>
+<!-- End of Mobile Accessories Section -->
+<!-- Home Accessories Section -->
+<div id="home-accessories" class="category-section">
+  <h2>Home Accessories</h2>
+  <div class="row">
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Wall Clock"><div class="card-body"><h5 class="card-title">Wall Clock</h5><p class="card-text">Rs. 1,200</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Cushion Covers"><div class="card-body"><h5 class="card-title">Cushion Covers</h5><p class="card-text">Rs. 400</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Curtains"><div class="card-body"><h5 class="card-title">Curtains</h5><p class="card-text">Rs. 1,500</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Photo Frames"><div class="card-body"><h5 class="card-title">Photo Frames</h5><p class="card-text">Rs. 300</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Bed Sheet Set"><div class="card-body"><h5 class="card-title">Bed Sheet Set</h5><p class="card-text">Rs. 1,800</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Decorative Vase"><div class="card-body"><h5 class="card-title">Decorative Vase</h5><p class="card-text">Rs. 1,200</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Doormat"><div class="card-body"><h5 class="card-title">Doormat</h5><p class="card-text">Rs. 600</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Decorative Lights"><div class="card-body"><h5 class="card-title">Decorative Lights</h5><p class="card-text">Rs. 800</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Table Lamp"><div class="card-body"><h5 class="card-title">Table Lamp</h5><p class="card-text">Rs. 1,500</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Curtain Tiebacks"><div class="card-body"><h5 class="card-title">Curtain Tiebacks</h5><p class="card-text">Rs. 400</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    
+    <!-- 15 more home accessories items -->
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Trinket Box"><div class="card-body"><h5 class="card-title">Trinket Box</h5><p class="card-text">Rs. 450</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Wall Art"><div class="card-body"><h5 class="card-title">Wall Art</h5><p class="card-text">Rs. 1,800</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Storage Basket"><div class="card-body"><h5 class="card-title">Storage Basket</h5><p class="card-text">Rs. 350</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Flower Pots"><div class="card-body"><h5 class="card-title">Flower Pots</h5><p class="card-text">Rs. 500</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Wall Shelf"><div class="card-body"><h5 class="card-title">Wall Shelf</h5><p class="card-text">Rs. 1,200</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Room Fragrance"><div class="card-body"><h5 class="card-title">Room Fragrance</h5><p class="card-text">Rs. 750</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Candles"><div class="card-body"><h5 class="card-title">Candles</h5><p class="card-text">Rs. 300</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Wall Mirror"><div class="card-body"><h5 class="card-title">Wall Mirror</h5><p class="card-text">Rs. 1,500</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Artificial Flowers"><div class="card-body"><h5 class="card-title">Artificial Flowers</h5><p class="card-text">Rs. 500</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Bed Throw"><div class="card-body"><h5 class="card-title">Bed Throw</h5><p class="card-text">Rs. 1,200</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+  </div>
+</div>
+<!-- End of Home Accessories Section -->
+<!-- family Section -->
+<div id="elders-section" class="category-section">
+  <h2>Elder's Section</h2>
+  <div class="row">
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Walking Stick"><div class="card-body"><h5 class="card-title">Walking Stick</h5><p class="card-text">Rs. 1,200</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Anti-Slip Slippers"><div class="card-body"><h5 class="card-title">Anti-Slip Slippers</h5><p class="card-text">Rs. 800</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Electric Heating Pad"><div class="card-body"><h5 class="card-title">Electric Heating Pad</h5><p class="card-text">Rs. 1,500</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Supportive Cushions"><div class="card-body"><h5 class="card-title">Supportive Cushions</h5><p class="card-text">Rs. 1,000</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Commode Chair"><div class="card-body"><h5 class="card-title">Commode Chair</h5><p class="card-text">Rs. 3,000</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Reclining Chair"><div class="card-body"><h5 class="card-title">Reclining Chair</h5><p class="card-text">Rs. 5,000</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Blood Pressure Monitor"><div class="card-body"><h5 class="card-title">Blood Pressure Monitor</h5><p class="card-text">Rs. 2,000</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Electric Massager"><div class="card-body"><h5 class="card-title">Electric Massager</h5><p class="card-text">Rs. 1,500</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Elderly Footstool"><div class="card-body"><h5 class="card-title">Elderly Footstool</h5><p class="card-text">Rs. 600</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Senior Walker"><div class="card-body"><h5 class="card-title">Senior Walker</h5><p class="card-text">Rs. 4,500</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    
+    <!-- 4 more elder's items -->
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Hearing Aid"><div class="card-body"><h5 class="card-title">Hearing Aid</h5><p class="card-text">Rs. 8,000</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Memory Foam Pillow"><div class="card-body"><h5 class="card-title">Memory Foam Pillow</h5><p class="card-text">Rs. 1,200</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Magnifying Glass"><div class="card-body"><h5 class="card-title">Magnifying Glass</h5><p class="card-text">Rs. 350</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+    <div class="col-md-3 product"><div class="card product-card"><img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Adjustable Bed Table"><div class="card-body"><h5 class="card-title">Adjustable Bed Table</h5><p class="card-text">Rs. 2,500</p><button class="btn btn-danger add-to-cart">Add to Cart</button></div></div></div>
+  </div>
+</div>
+<!-- End of family Section -->
+
+
+    <!-- Cart Section -->
+    <div class="mt-5">
+      <h3>Your Cart</h3>
+      <ul id="cart-items" class="list-group"></ul>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="mt-5">
+      <h2>Contact Us</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <h5>Contact Information</h5>
+          <p>Phone: <strong>03112974518</strong></p>
+          <p>Email: <strong>Owais.jewani@gmail.com</strong></p>
+          <p><em>delivery available all over karachi.</em> </p>
+          <p><em>Only cash on: <strong>delivery</strong></em></p>
+          <p><em>delivery charges: <strong>free</strong> 😍</em></p>
+          <p><em>contact us to buy something</em></p>
+          <a href="https://wa.me/03112974518" target="_blank" class="whatsapp-btn">Chat on WhatsApp</a>
+        </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>Choose and buy </h5>
+          <p>The best online shopping experience.</p>
+          <p><em>the store made in pakistan </em></p>
+        </div>
+        <div class="col-md-6">
+          <p>&copy;    store disighned by:Afham Ahmed 2025 Choose and buy. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const cartItems = document.getElementById("cart-items");
+    const addToCartButtons = document.querySelectorAll(".add-to-cart");
+    const searchInput = document.getElementById("searchInput");
+    const allProducts = document.querySelectorAll(".product");
+    const cart = {};
+
+    addToCartButtons.forEach(button => {
+      button.addEventListener("click", function () {
+        const productCard = this.closest(".product-card");
+        const title = productCard.querySelector(".card-title").innerText;
+        const price = productCard.querySelector(".card-text").innerText;
+
+        if (cart[title]) {
+          cart[title].quantity += 1;
+        } else {
+          cart[title] = {
+            price: price,
+            quantity: 1
+          };
+        }
+
+        renderCart();
+      });
+    });
+
+    function renderCart() {
+      cartItems.innerHTML = "";
+      for (const title in cart) {
+        const item = cart[title];
+        const listItem = document.createElement("li");
+        listItem.className = "list-group-item";
+        listItem.innerHTML = `${title} - ${item.price} (Qty: ${item.quantity}) <span class="remove-btn" onclick="removeItem('${title}')">Remove</span>`;
+        cartItems.appendChild(listItem);
+      }
+    }
+   
+    function removeItem(title) {
+      delete cart[title];
+      renderCart();
+    }
+
+    // Search functionality
+    searchInput.addEventListener("input", function () {
+      const query = searchInput.value.toLowerCase();
+      allProducts.forEach(product => {
+        const productName = product.querySelector(".card-title").innerText.toLowerCase();
+        if (productName.includes(query)) {
+          product.style.display = "block";
+        } else {
+          product.style.display = "none";
+        }
+      });
+    });
+  </script>
+</body>
+</html>
